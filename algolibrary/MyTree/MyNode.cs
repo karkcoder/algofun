@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace algolibrary.MyTree
+﻿namespace algolibrary.MyTree
 {
 	public class MyNode
 	{

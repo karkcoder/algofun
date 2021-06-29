@@ -19,7 +19,6 @@ namespace algolibrary
                     right = right.RightNode;
                 else
                 {
-                    //Exist same value
                     return false;
                 }
             }
@@ -58,19 +57,15 @@ namespace algolibrary
             else if (key > parent.Data)
                 parent.RightNode = Remove(parent.RightNode, key);
 
-            // if value is same as parent's value, then this is the node to be deleted  
             else
             {
-                // node with only one child or no child  
                 if (parent.LeftNode == null)
                     return parent.RightNode;
                 else if (parent.RightNode == null)
                     return parent.LeftNode;
 
-                // node with two children: Get the inorder successor (smallest in the right subtree)  
                 parent.Data = MinValue(parent.RightNode);
 
-                // Delete the inorder successor  
                 parent.RightNode = Remove(parent.RightNode, parent.Data);
             }
 
