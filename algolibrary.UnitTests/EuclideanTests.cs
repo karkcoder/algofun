@@ -17,6 +17,7 @@ namespace algolibrary.UnitTests
 		[Theory]
 		[InlineData(8, 36, 72)] //8 * 9 = 72, 36 * 2 = 72
 		[InlineData(10, 12, 60)] //10 * 6 = 60, 12 * 5 = 60
+		[InlineData(12, 10, 60)] //10 * 6 = 60, 12 * 5 = 60
 		public void LCMTestsUsingEuclideanAlgorithm(int a, int b, int expectedLCM)
 		{
 			Euclidean lcmTest = new Euclidean();
