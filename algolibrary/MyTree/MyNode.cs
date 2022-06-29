@@ -2,13 +2,8 @@
 {
 	public class MyNode
 	{
-		public MyNode left;
-		public MyNode right;
-
-		public MyNode()
-		{
-			left = new MyNode();
-			right = new MyNode();
-		}
+		public MyNode Left { get; set; }
+		public MyNode Right { get; set; }
+		public int Data { get; set; }
 	}
 }
